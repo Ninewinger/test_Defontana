@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { EsquemaComponent } from './components/esquema/esquema.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    EsquemaComponent
   ],
   imports: [
     BrowserModule
