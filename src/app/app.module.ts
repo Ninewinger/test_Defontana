@@ -1,17 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-import { EsquemaComponent } from './components/esquema/esquema.component';
-
 @NgModule({
   declarations: [
-    AppComponent,
-    EsquemaComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
