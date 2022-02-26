@@ -15,8 +15,8 @@ export class AppComponent {
     private apiService: ApiService
   ) {
     this.apiService.getOrganismos().subscribe((resp: any) => {
-      console.log(resp);
-      this.organismos = resp;
+      console.log(resp.data);
+      this.organismos = resp.data;
     }
     );
   }    
