@@ -1,16 +1,8 @@
-<!-- a tree of organism with the parents in the trunk and childs in branches  -->
-<div>
-  <h1>{{title}}</h1>
-  <div>
-    <ul>
-      <li *ngFor="let organism of organisms">
-        <span>{{organism.Name}}</span>
-        <ul>
-          <li *ngFor="let child of organism.children">
-            <span>{{child.name}}</span>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
+<!-- array organismos: {"ID":"4","Name":"uryarchaeota","Parent":2}  -->
+
+<ul>
+  <li *ngFor="let organismo of organismos">
+    <p>{{organismo.ID}} - {{organismo.Name}} - {{organismo.Parent}}</p>
+  </li>
+</ul>
+

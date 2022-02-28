@@ -7,10 +7,9 @@ import { ApiService } from './api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'testDefontana';
-  organismos: Array<any>=[];
-
-
+  // organismos ordenados por Parent
+  organismos: Array<any> = [];
+  
   constructor(
     private apiService: ApiService
   ) {
@@ -19,5 +18,5 @@ export class AppComponent {
       this.organismos = resp.data;
     }
     );
-  }    
+  }   
 }
